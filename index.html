@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinux IT Technologies</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="nav.css" rel="stylesheet" type="text/css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f1f2;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        
+
+        /*hero section*/
+
+        .hero-section {
+            padding: 50px 0;
+            background-color: #ffffff;
+            margin-bottom: 40px;
+
+        }
+
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 1.2;
+            color: #333;
+            transition: all 0.3s ease-in-out;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            animation-name: heroanimation;
+            animation-duration: 2s;
+            animation-delay: 3;
+            animation-iteration-count: 1;
+        
+            
+        }
+
+        .hero-title:hover {
+            transform: translateY(-5px);
+            text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-title span {
+            color: #32746D;
+        }
+
+
+        .hero-description {
+            font-size: 1.1rem;
+            color: #6c757d;
+            margin: 20px 0;
+            animation-name: heroanimation;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-delay: 3;
+        }
+
+
+        .btn-primary {
+            background-color: #32746D;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            animation-name: heroanimation;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-delay: 3;
+
+        }
+
+        .btn-primary:hover {
+            background-color: #32746D;
+            transform: scale(1.2);
+            color: rgb(255, 254, 254);
+        }
+
+        .btn-primary:active {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        @keyframes heroanimation{
+            from{
+
+            }
+            to{
+               transform: translateX(70px); 
+            }
+        }
+
+        /* video section*/
+
+        .video-thumbnail {
+            position: relative;
+            max-width: 100%;
+        }
+
+        .video-thumbnail img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            right: 87%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-color: #32746D;
+            border-radius: 50%;
+            padding: 15px 25px;
+            font-size: 1.5rem;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s ease-in-out;
+
+        }
+
+        .play-button:hover {
+            background-color: #32746D;
+            transform: translate(-50%, -50%) scale(1.1);
+
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .text-section {
+            max-width: 50%;
+        }
+
+        .image-section {
+            max-width: 45%;
+        }
+
+        @media (max-width: 768px) {
+
+            .text-section,
+            .image-section {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .content-wrapper {
+                flex-direction: column;
+            }
+        }
+
+        /*services section*/
+
+        .services-section {
+            padding: 50px 0;
+           /* background-color: #ffffff;*/
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            /* Space between items */
+            flex-wrap: wrap;
+            /* Ensures wrapping on smaller screens */
+        }
+
+        .sakshi {
+            background-color: #32746D;
+            color: rgb(255, 255, 255);
+            height: 400px;
+            width: 90%;
+            border: 2px solid red;
+            padding: 20px;
+            margin-bottom: 60px;
+            border: 0px;
+            border-radius: 30px;
+        }
+
+        .sakshi img {
+            width: 130px;
+            height: 130px;
+            overflow: hidden;
+            padding: 0px;
+            margin: 20px;
+        }
+
+        .sakshi:hover {
+            color: #ffffff;
+            /* Ensures image is responsive */
+            background-color: #000000;
+        }
+
+        .sakshi p {
+            color: white;
+        }
+
+        .sakshi h3 {
+            margin-bottom: 20px;
+        }
+
+        .sakshi h1 {
+            text-align: left;
+            color: #32746D;
+        }
+
+        .about-container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+           /* max-width: 600px;*/
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .about-container h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .about-container p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .about-container button {
+            background-color: #32746D;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .about-container button:hover {
+            background-color:#32746D;
+        }
+        .team {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .team img {
+            width: 100%;
+            max-width: 400px;
+        }
+
+
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 20px;
+           /* background-color: #ffffff;*/
+        }
+
+        .section-subtitle {
+
+            color: #32746D;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: start;
+            padding-left: 100px;
+            /*padding-top: 40px;*/
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+           /* margin: 10px 0;*/
+            color: #000000;
+            padding-left: 100px;
+            text-align: center;
+        }
+
+        .view-all-btn {
+            background-color: #32746D;
+            color: #ffffff;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            margin-left: auto;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-right: 150px;
+            margin-top: 30px;
+
+
+        }
+
+        .view-all-btn:hover {
+            background-color: #32746D;
+            transform: scale(1.2);
+        }
+
+
+        .trinux {
+            background-color: #32746D;
+            color: rgb(255, 255, 255);
+            /* display: inline-block;*/
+            height: 400px;
+            width: 90%;
+            border: 2px solid red;
+            padding: 20px;
+            margin-bottom: 10px;
+            border: 0px;
+            border-radius: 30px;
+
+        }
+
+        .trinux img {
+            width: 130px;
+            /* Ensures image is responsive */
+            height: 130px;
+            overflow: hidden;
+            padding: 0px;
+            margin: 20px;
+        }
+
+        .trinux:hover {
+            color: #ffffff;
+            /* Ensures image is responsive */
+            background-color: #000000;
+        }
+
+        .trinux p {
+            color: white;
+        }
+
+        .trinux h3 {
+            margin-bottom: 20px;
+        }
+
+        .trinux h1 {
+            text-align: left;
+            color: #32746D;
+        }
+        
+        h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+   /* margin-bottom: 20px;*/
+}
+
+p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.expertise-card {
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 40px;
+        }
+        .expertise-card img {
+            max-width: 100%;
+            height: 250px;
+            border-radius: 5px;
+        }
+        .expertise-card h3 {
+            margin-top: 15px;
+            font-size: 1.5rem;
+        }
+        .banking {
+            background-color: #6FCF97;
+        }
+        .insurance {
+            background-color: #56CCF2;
+        }
+        .healthcare {
+            background-color: #2D9CDB;
+        }
+        .life-sciences {
+            background-color: #F2994A;
+        }
+        .industrial {
+            background-color: #F2C94C;
+        }
+        .software {
+            background-color: #EB5757;
+        }
+
+
+
+          @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./assets/image/Trinux Logo for website.png" alt="Logo" value="trinux" height="100%" width="100%"/>
+        </div>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="#">Services</a>
+                <ul class="dropdown-menu">
+                    <li><a href="./webdesign.html">Web designing</a></li>
+                    <li><a href="./ecommerce.html">E-Commerce designing</a></li>
+                    <li><a href="./uiux.html">UI/UX Design</a></li>
+                    <li><a href="./webmobile.html">Web Mobile Designing</a></li>
+                    <li><a href="./branding.html">Branding</a></li>
+                    <li><a href="./seo.html">SEO / SMO</a></li>
+                    <li><a href="./digitalmarketing.html">Digital Marketing</a></li>
+                    <li><a href="./allservice.html">All Services</a></li>
+                </ul>
+            </li>
+            <li><a href="./career.html">Career</a></li>
+           
+              <li><a href="./product.html">Products</a>
+                
+            </li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero-section">
+        <div class="container content-wrapper">
+            <!-- Text Section -->
+            <div class="text-section">
+                <h1 class="hero-title">We Simplify <br> Building Smarter Solution <span>Your Business</span></h1>
+                <p class="hero-description">"Innovative technology for a smarter business future.
+                    Empowering growth through reliable, scalable solutions.
+                    Your success is our mission, and technology is our tool."</p>
+                <a class="btn btn-primary" href="#">Let's Connect</a>
+            </div>
+
+            <!-- Image Section -->
+            <div class="image-section">
+                <div class="video-thumbnail">
+                    <img src="https://purdueglobalwriting.center/wp-content/uploads/2020/04/gettyimages-677892870.jpg"
+                        alt="Video Thumbnail" class="img-fluid">
+                    <button class="play-button">▶</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="about-container">
+        <h1>About Us</h1>
+        <p>Your ideal partner for Digital Transformation</p>
+        <button onclick="window.location.href='about.html'">Know More</button>
+        <div class="team">
+            <img src="https://img.freepik.com/free-vector/team-happy-people-receiving-order-from-courier_74855-6672.jpg?t=st=1736487298~exp=1736490898~hmac=77f32658626ded0a658f620e73a970f0e8443956f9e7a906205653004ac3041b&w=1380" alt="Team Illustration">
+        </div>
+    </div>
+
+    <!-- header Section -->
+    <div class="header">
+        <div class="header-container">
+            <div>
+                <p class="section-subtitle">Our Services</p>
+                <h1 class="section-title">What we can Sale</h1>
+            </div>
+            <a href="#" class="view-all-btn">
+                View All Services <span>&#8599;</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="row">
+                <!-- First Service -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="sakshi">
+                        <img src="https://img.freepik.com/free-vector/man-woman-teamwork-with-gears-computer-website_24877-54750.jpg?t=st=1735817080~exp=1735820680~hmac=87544d04e9a903376b50a0952ae1e1cae2e0f1fcef438f34a32f53cd2937c0f9&w=740"
+                            alt="Sample Image">
+                        <h3>Web Development</h3>
+                        <p>Our web development services cater to building responsive and scalable websites that provide
+                            seamless user experiences, ultimately driving more traffic and conversions to your business.
+                        </p>
+                    </div>
+                </div>
+                <!-- Second Service -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="sakshi">
+                        <img src="https://img.freepik.com/premium-vector/app-development-vector-icon-can-be-used-computer-programming-iconset_717774-163399.jpg?w=740"
+                            alt="Sample Image">
+                        <h3>Mobile App Development</h3>
+                        <p>With mobile app development expertise, we create user-friendly & high-performing applications
+                            that run seamlessly across multiple platforms, ensuring maximum engagement with your
+                            audience.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="sakshi">
+                        <img src="https://img.freepik.com/free-vector/e-commerce-network-computer_23-2147654796.jpg?t=st=1735818353~exp=1735821953~hmac=5ff11fde99e5ed4ad6f7de9235ad33de7f01eb18e0ffa20d7b5c9a3fa76f788e&w=740"
+                            alt="Sample Image">
+                        <h3>E-commerce Solution</h3>
+                        <p>Our e-commerce web and app are tailored to meet your business needs, from online store setup
+                            and payment integration to order management and shipping logistics.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="sakshi">
+                        <img src="https://img.freepik.com/free-vector/linear-icons-about-internet-security_1257-229.jpg?t=st=1735819045~exp=1735822645~hmac=037080b65ba043b775fcb3d24e285052c9b5360a29a0f7ac80b8814b5aede206&w=740"
+                            alt="Sample Image">
+                        <h3>Dedicated Resource</h3>
+                        <p>Our dedicated resources model allows you to augment your in-house development team with
+                            experienced and skilled IT professionals, providing you with the flexibility and scalability
+                            to meet your business needs.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="sakshi">
+                        <img src="https://img.freepik.com/free-vector/programming-background-design_1223-78.jpg?t=st=1735818880~exp=1735822480~hmac=6bc6c2a71f2b7403fb6c2a9471642d89801b513fa8e29b96d6c1de8bef312b38&w=740"
+                            alt="Sample Image">
+                        <h3>UI/UX Development</h3>
+                        <p>Our UI/UX development services focus on delivering intuitive and engaging designs that
+                            enhance user experiences, resulting in increased customer satisfaction and loyalty.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="sakshi">
+                        <img src="https://img.freepik.com/free-vector/shopping-ecommerce-marketing_24877-50090.jpg?t=st=1735818960~exp=1735822560~hmac=ea953c3de6d3b11e0ee6e15ddf9390b72c1fd849be3eb83c21afe4b0d062e564&w=740"
+                            alt="Sample Image">
+                        <h3>Digital marketing</h3>
+                        <p>Our digital marketing services help businesses reach their target audience and improve their
+                            online visibility through a range of channels, including Search Engine Optimization, Social
+                            Media Marketing, Pay-per-click ads, etc.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+
+    <div class="container text-center my-5">
+        <h1>Our Industry Expertise and Solutions</h1>
+        <p>Creating business value at the intersection of your industry transformation and today’s latest technology innovation.</p>
+    </div>
+
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <div class="expertise-card banking">
+                    <img src="https://img.freepik.com/free-vector/bank-clients-using-atm-people-waiting-queue-talking-keeping-social-distance-flat-vector-illustration-public-place-banking-finance_74855-8231.jpg?t=st=1736327994~exp=1736331594~hmac=a99301e6fea348bb79fb6c21e2955c9542a2f91c596bb9c42d4d8e2880ffaad6&w=996" alt="Banking & Financial Services">
+                    <h3>Banking & Financial Services</h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="expertise-card insurance">
+                    <img src="https://img.freepik.com/free-vector/illustration-people-with-insurance-policies_53876-40794.jpg?t=st=1736328113~exp=1736331713~hmac=4ab6d6a9cc0be2acc2ebb340ddaccc671da18e19e9e695b595d01d13c767c741&w=900" alt="Insurance">
+                    <h3>Insurance</h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="expertise-card healthcare">
+                    <img src="https://img.freepik.com/free-photo/close-up-doctor-with-stethoscope_23-2149191355.jpg?t=st=1736328005~exp=1736331605~hmac=c0de51274edcd76c43e740cdee27d2d494dd0ed54bf9d3d9c628d17e5b4a45d2&w=996" alt="Healthcare">
+                    <h3>Healthcare</h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="expertise-card life-sciences">
+                    <img src="https://img.freepik.com/free-photo/people-taking-part-business-event_23-2149333676.jpg?t=st=1736490810~exp=1736494410~hmac=63de86d510baf690052912593acd23d6728c8a3ff00f636e5e5c5a60aabd9f80&w=996" alt="Life Sciences">
+                    <h3>Training Program</h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="expertise-card industrial">
+                    <img src="https://img.freepik.com/free-photo/male-asian-engineer-professional-having-discussion-standing-concult-cnc-machine-factory-two-asian-coworker-brainstorm-explaining-solves-process-cnc-operate-machine_609648-837.jpg?t=st=1736328254~exp=1736331854~hmac=0939b7b7a0433009a4e9df80c63cfb99624423dffdec2ebfc391f7bc3a1f768d&w=996" alt="Industrial">
+                    <h3>Industrial</h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="expertise-card software">
+                    <img src="https://img.freepik.com/free-photo/programming-background-collage_23-2149901773.jpg?t=st=1736328365~exp=1736331965~hmac=54fa4ad1eb42cffc1422513080bf968fd45191f23949490d3a89d5608f908b78&w=900" alt="Software & Hi-Tech">
+                    <h3>Software & Hi-Tech</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--footer-->
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="column">
+                <img src="C:\Users\saksh\OneDrive\Desktop\upssystem\image\WhatsApp_Image_2024-12-27_at_10.54.14_b226637f-removebg-preview (1).png"
+                            alt="Logo" />
+                        <p><b>TrinuxIT Technologies Pvt. Ltd.</b> is a software company that develops, sells, and
+                            supports software
+                            products and services. We provide solutions to small startups, large corporations, and
+                            specialize
+                            in various areas such as operating systems, productivity tools, or custom software
+                            solutions.
+                            Key activities include software development, quality assurance, product management,
+                            customer
+                            support, sales, and marketing. We prioritize innovation and staying abreast of
+                            technological
+                            advancements to remain competitive in the market.</p>
+                        <p class="fw-bold">info@trinuxit.com</p>
+                        <p class="fw-bold">+91 9821132563 / 9821315050</p>
+            </div>
+            <div class="column">
+                <h3>Pages</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Industries</h3>
+                <ul>
+                    <li><a href="#">Banking & Financial Services</a></li>
+                    <li><a href="#">Insurance</a></li>
+                    <li><a href="#">Healthcare</a></li>
+                    <li><a href="#">Life Sciences</a></li>
+                    <li><a href="#">Consumer Tech</a></li>
+                    <li><a href="#">Industrial</a></li>
+                    <li><a href="#">Software & Hi-Tech</a></li>
+                    <li><a href="#">Telecom & Media</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">UI/UX Designing</a></li>
+                    <li><a href="#">Web/Mobile Apps</a></li>
+                    <li><a href="#">Website Designing</a></li>
+                    <li><a href="#">E-Commerce Website/Apps</a></li>
+                    <li><a href="#">AWS/AZURE/GCP</a></li>
+                    <li><a href="#">Custom CRM/CMS/ERP/SAP</a></li>
+                    <li><a href="#">System Integration</a></li>
+                    <li><a href="#">Cloud Computing</a></li>
+                    <li><a href="#">Business Intelligence</a></li>
+                    <li><a href="#">Artificial Intelligence</a></li>
+                    <li><a href="#">AR/VR</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">SEO/SMO</a></li>
+                    <li><a href="#">Branding</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Trinux IT Technolohies Pvt Ltd</p>
+            <div class="social-media">
+                <a href="#"><img src="https://img.freepik.com/free-psd/social-media-logo-design_23-2151320965.jpg?t=st=1736330864~exp=1736334464~hmac=07a96b3a2d6a216747a210078b7766d0f32b5a8d0358ecc65b6d612c5e0a080a&w=740" alt="LinkedIn"></a>
+                <a href="#"><img src="https://img.freepik.com/free-vector/twitter-new-logo-x-icon-design_1017-45424.jpg?t=st=1736330937~exp=1736334537~hmac=1f213d83928d2d19539a7fb2f341d30ab94a1d6ee25326f7497ed6e32de0009a&w=740" alt="Twitter"></a>
+                <a href="#"><img src="https://img.freepik.com/free-psd/social-media-logo-design_23-2151296989.jpg?t=st=1736331081~exp=1736334681~hmac=c3ad7352aa845b676116e6888d13b602ae5afd6cb2360d45387ef28bdf808a5f&w=740" alt="YouTube"></a>
+                <a href="#"><img src="https://img.freepik.com/free-psd/social-media-logo-design_23-2151296987.jpg?t=st=1736331020~exp=1736334620~hmac=8ad5877165844fc32dce95ca25e6a2494f3980570841b20376b21725c17314f1&w=740" alt="Facebook"></a>
+                <a href="#"><img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg?t=st=1736329328~exp=1736332928~hmac=c8b3c2e29bc0181ba7f1242552840e88261caa9a5d48c5aeee36f290157e5551&w=740" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    
+    <div class="content">
+        <!-- Main content of the page goes here -->
+    </div>
+    <div class="contact-bar">
+        <div>
+            <img src="https://img.freepik.com/free-vector/phone-circle-black-green_78370-6562.jpg?t=st=1736489163~exp=1736492763~hmac=fc7734b068cf874cf67ded71b5e192037848e24afcf4e36388b6cd14c4105a5e&w=740" alt="Phone" width="20">
+            <span>+91 9511228696</span>
+        </div>
+        <div>
+            <img src="https://img.freepik.com/free-vector/mail-envelope-with-1-alert_78370-3334.jpg?t=st=1736489127~exp=1736492727~hmac=4beac8844fc1b09d66db05fa73326b1e843a6f2ce5d4ba557a015e28db89214e&w=740" alt="Email" width="20">
+            <span>Info@trinuxit.com</span>
+        </div>
+        <div>
+            <img src="https://img.freepik.com/premium-vector/luxury-hotel-vector-illustration_1186366-75481.jpg?w=740" alt="Inquire" width="20">
+            <span>Trinux IT Technologies Pvt Ltd.</span>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
